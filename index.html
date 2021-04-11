@@ -5,7 +5,6 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -17,26 +16,39 @@
     <body>
         <!-- header -->
         <header>
-            <!-- nav -->
-            <div id="header_nav">
+            <!-- navbar -->
+            <nav class="navbar navbar-default navbar-fixed-top">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-xs-6"></div>
-                        <div class="col-xs-6"></div>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#hamburger_menu" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand text-uppercase bold_txt" href="#">Start Bootstrap</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="hamburger_menu">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#" class="text-uppercase bold_txt">Portfolio</a></li>
+                            <li><a href="#" class="text-uppercase bold_txt">About</a></li>
+                            <li><a href="#" class="text-uppercase bold_txt">Contact</a></li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <!-- /nav -->
+            </nav>
+            <!-- /navbar -->
 
             <!-- jumbotron -->
-            <div id="jumbotron">
+            <div id="jumbotron" class="white_txt text-center">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12">
-                            <!-- <img src="img/avatar.svg" alt=""> -->
-                            <h1 class="white_txt upc pad_mar">Start Bootstrap</h1>
-                            <span class="icon_wrapper white_txt"><i class="fas fa-star"></i></span>
-                            <p class="white_txt upc">graphic artist - web designer - illustrator</p>
+                            <img class="avatar" src="img/avatar.svg" alt="Avatar">
+                            <h1 class="bold_txt text-uppercase">Start Bootstrap</h1>
+                            <span class="icon_wrapper white_wrapper large_wrapper"><i class="fas fa-star fa-2x"></i></span>
+                            <p class="text-uppercase">graphic artist - web designer - illustrator</p>
                         </div>
                     </div>
                 </div>
@@ -48,28 +60,28 @@
         <!-- main -->
         <main>
             <!-- portfolio -->
-            <section id="portfolio">
-                <h2 class="pad_mar upc">portfolio</h2>
-                <span class="icon_wrapper"><i class="fas fa-star"></i></span>
+            <section id="portfolio" class="text-center">
+                <h2 class="bold_txt text-uppercase">portfolio</h2>
+                <span class="icon_wrapper black_wrapper large_wrapper"><i class="fas fa-star fa-2x"></i></span>
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-6 col-lg-4">
-                            <!-- <img src="img/cake.png" alt=""> -->
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img class="img-responsive img-rounded portfolio_img" src="img/cabin.png" alt="Cabin">
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-lg-4">
-                            <!-- <img src="img/safe.png" alt=""> -->
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img class="img-responsive img-rounded portfolio_img" src="img/cake.png" alt="Cake">
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-lg-4">
-                            <!-- <img src="img/cabin.png" alt=""> -->
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img class="img-responsive img-rounded portfolio_img" src="img/circus.png" alt="Circus">
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-lg-4">
-                            <!-- <img src="img/circus.png" alt=""> -->
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img class="img-responsive img-rounded portfolio_img" src="img/game.png" alt="Game">
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-lg-4">
-                            <!-- <img src="img/game.png" alt=""> -->
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img class="img-responsive img-rounded portfolio_img" src="img/submarine.png" alt="Submarine">
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-lg-4">
-                            <!-- <img src="img/submarine.png" alt=""> -->
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img class="img-responsive img-rounded portfolio_img" src="img/safe.png" alt="Safe">
                         </div>
                     </div>
                 </div>
@@ -77,36 +89,63 @@
             <!-- /portfolio -->
 
             <!-- about -->
-            <section id="about">
-                <h2 class="pad_mar upc white_txt">About</h2>
-                <span class="icon_wrapper"><i class="fas fa-star white_txt"></i></span>
+            <section id="about" class="white_txt text-center">
+                <h2 class="bold_txt text-uppercase">About</h2>
+                <span class="icon_wrapper white_wrapper"><i class="fas fa-star fa-2x white_txt"></i></span>
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-md-5">
-                            <p class="white_txt left_txt pd">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id
-                                doloremque unde totam corporis iure aperiam consequuntur voluptates necessitatibus,
-                                voluptate fugit mollitia, sequi officiis reprehenderit, sit fugiat numquam? Culpa dolor
-                                excepturi consequatur voluptas non nesciunt ipsa.</p>
+                            <p class="text-left">
+                                Freelancer is a free Bottstrap theme created by Start Bootstrap. The
+                                download includes the
+                                complete source files including <span class="text-uppercase">html</span>,
+                                <span class="text-uppercase">css</span> and JavaScript as well as optional
+                                <span class="text-uppercase">less</span> stylesheets for easy customization.
+                            </p>
                         </div>
                         <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-pull-1 col-md-5 col-md-pull-1">
-                            <p class="white_txt left_txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
-                                tempora delectus voluptates doloremque perspiciatis eos, repellat sint corrupti aut tempore
-                                voluptatibus ut recusandae distinctio nisi dolorem aliquam, porro natus ratione fugiat sunt.
-                                Numquam, doloremque excepturi.</p>
+                            <p class="text-left">
+                                Whether you're a student looking to showcase your work,
+                                a professional looking to attract
+                                clients, or a graphic artist looking to share your projects, this template is the perfect
+                                starting point!
+                            </p>
                         </div>
                     </div>
-                    <a href="#" class="btn">download</a>
+                    <a href="#" class="btn btn_light">
+                        <i class="fas fa-download"></i>Download
+                    </a>
                 </div>
             </section>
             <!-- /about -->
 
             <!-- contact -->
-            <section id="contact">
-                <h2 class="pad_mar upc">contact</h2>
-                <span class="icon_wrapper"><i class="fas fa-star"></i></span>
+            <section id="contact" class="text-center">
+                <h2 class="bold_txt text-uppercase">contact me</h2>
+                <span class="icon_wrapper black_wrapper"><i class="fas fa-star fa-2x"></i></span>
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-10 col-xs-offset-1"></div>
+                        <div class="col-xs-10 col-xs-offset-1">
+                            <form action="index.html" method="get" class="text-left">
+                                <div class="form-group">
+                                    <label class="label_txt" for="name">Name</label>
+                                    <input class="no_brd" type="text" id="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="label_txt" for="email">Email Address</label>
+                                    <input class="no_brd" type="text" id="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="label_txt" for="phone">Phone Number</label>
+                                    <input class="no_brd" type="text" id="phone" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="label_txt" for="message">Message</label>
+                                    <textarea class="no_brd" name="message" id="message" rows="5"></textarea>
+                                </div>
+                                <button class="btn btn_green">Send</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -116,36 +155,37 @@
 
         <!-- footer -->
         <footer>
-            <div id="footer_top">
+            <div id="footer_top" class="white_txt text-center">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-4 col-sm-4 col-xs-12">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum velit quisquam deleniti magni
-                                porro. Laboriosam quos reprehenderit quia deleniti minus voluptatum obcaecati vero, aut non
-                                dolor, officiis praesentium nostrum. Delectus?
+                        <div class="col-xs-12 col-sm-4 col-md-4 ">
+                            <h3 class="text-uppercase">location</h3>
+                            <p class="address">
+                                2215 John Daniel Drive Clark, <span class="text-uppercase">mo 54243</span>
                             </p>
                         </div>
-                        <div class="col-lg-4 col-sm-4 col-xs-12">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum velit quisquam deleniti magni
-                                porro. Laboriosam quos reprehenderit quia deleniti minus voluptatum obcaecati vero, aut non
-                                dolor, officiis praesentium nostrum. Delectus?
-                            </p>
+                        <div class="col-xs-12 col-sm-4 col-md-4 ">
+                            <h3 class="text-uppercase">around the web</h3>
+                            <ul id="social_list" class="list-inline">
+                                <li><i class="fab fa-facebook-f"></i></li>
+                                <li><i class="fab fa-google-plus-g"></i></li>
+                                <li><i class="fab fa-twitter"></i></li>
+                                <li><i class="fab fa-linkedin-in"></i></li>
+                            </ul>
                         </div>
-                        <div class="col-lg-4 col-sm-4 col-xs-12">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum velit quisquam deleniti magni
-                                porro. Laboriosam quos reprehenderit quia deleniti minus voluptatum obcaecati vero, aut non
-                                dolor, officiis praesentium nostrum. Delectus?
+                        <div class="col-xs-12 col-sm-4 col-md-4 ">
+                            <h3 class="text-uppercase">about freelancer</h3>
+                            <p class="feature">
+                                Freelance is a free to use, open source Bootstrap theme created by
+                                <span class="bootstrap">Start Bootstrap</span>.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div id="footer_bottom">
-
+            <div id="footer_bottom" class="text-center white_txt">
+                <span>Copyright &copy; Your Website 2019</span>
             </div>
         </footer>
         <!-- /footer -->
