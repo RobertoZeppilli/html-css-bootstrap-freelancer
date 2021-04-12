@@ -3,6 +3,11 @@ body {
   padding-top: 80px;
 }
 
+.wrapper_60 {
+  width: 60%;
+  margin: 0 auto;
+}
+
 h1 {
   font-size: 3em;
 }
@@ -83,33 +88,36 @@ p {
 
 /* HEADER */
 /* navbar */
-.navbar-brand,
-.navbar-nav > li > a {
+#logo,
+#links > li > a {
   height: 80px;
   line-height: 50px;
 }
-.navbar-brand {
+#logo {
   pointer-events: none;
 }
 
-.navbar-default {
+#navbar {
   border: none;
   background-color: #2c3e50;
 }
-.navbar-default .navbar-brand,
-.navbar-default .navbar-nav > li > a {
+#navbar #logo,
+#navbar #links > li > a {
   color: white;
 }
-.navbar-default .navbar-nav > li > a {
+#navbar #links > li > a {
   transition: color .5s ease-in-out;
 }
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
+#navbar #links > li > a:hover {
   color: #1ABC9C;
 }
+#links .active a{
+  background-color: #3A546D;
+}
 
-.navbar-toggle {
+#navbar button {
   margin-top: 23px;
+  margin-bottom: 23px;
 }
 
 /* jumbotron */
@@ -128,7 +136,34 @@ p {
   padding-bottom: 30px;
 }
 .portfolio_img {
+  position: relative;
   margin-bottom: 30px;
+  border-radius: 10px;
+  background-color: #1ABC9C;
+}
+.portfolio_img img {
+  opacity: 1;
+  transition: .5s ease;
+  border-radius: 10px;
+  backface-visibility: hidden;
+}
+.plus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+}
+
+.portfolio_img:hover img {
+  opacity: 0.4;
+}
+
+.portfolio_img:hover .plus {
+  opacity: 1;
 }
 
 /* about section */
@@ -201,7 +236,7 @@ p {
     font-size: 1.2em; 
   }
   #about p {
-    font-size: 1.8em;
+    font-size: 1.3em;
   }
   #jumbotron p {
     font-size: 1.1em;
@@ -224,11 +259,6 @@ p {
 
   #contact {
     padding: 10px 0;
-  }
-
-  #about p,
-  #contact form {
-    padding: 10px;
   }
   
   .icon_wrapper::before,

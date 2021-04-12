@@ -17,7 +17,7 @@
         <!-- header -->
         <header>
             <!-- navbar -->
-            <nav class="navbar navbar-default navbar-fixed-top">
+            <nav id="navbar" class="navbar navbar-default navbar-fixed-top">
                 <div class="container">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -27,13 +27,13 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand text-uppercase bold_txt" href="#">Start Bootstrap</a>
+                        <a id="logo" class="navbar-brand text-uppercase bold_txt" href="#">Start Bootstrap</a>
                     </div>
                     <div class="collapse navbar-collapse" id="hamburger_menu">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#" class="text-uppercase bold_txt">Portfolio</a></li>
-                            <li><a href="#" class="text-uppercase bold_txt">About</a></li>
-                            <li><a href="#" class="text-uppercase bold_txt">Contact</a></li>
+                        <ul id="links" class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="#portfolio" class="text-uppercase bold_txt">Portfolio</a></li>
+                            <li><a href="#about" class="text-uppercase bold_txt">About</a></li>
+                            <li><a href="#contact" class="text-uppercase bold_txt">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -65,23 +65,53 @@
                 <span class="icon_wrapper black_wrapper large_wrapper"><i class="fas fa-star fa-2x"></i></span>
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-6 col-md-4">
-                            <img class="img-responsive img-rounded portfolio_img" src="img/cabin.png" alt="Cabin">
+                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                            <div class="portfolio_img">
+                                <img class="img-responsive img-rounded portfolio_img" src="img/cabin.png" alt="Cabin">
+                                <div class="plus">
+                                    <i class="fas fa-plus fa-4x"></i>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4">
-                            <img class="img-responsive img-rounded portfolio_img" src="img/cake.png" alt="Cake">
+                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                            <div class="portfolio_img">
+                                <img class="img-responsive img-rounded" src="img/cake.png" alt="Cake">
+                                <div class="plus">
+                                    <i class="fas fa-plus fa-4x"></i>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4">
-                            <img class="img-responsive img-rounded portfolio_img" src="img/circus.png" alt="Circus">
+                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                            <div class="portfolio_img">
+                                <img class="img-responsive img-rounded" src="img/circus.png" alt="Circus">
+                                <div class="plus">
+                                    <i class="fas fa-plus fa-4x"></i>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4">
-                            <img class="img-responsive img-rounded portfolio_img" src="img/game.png" alt="Game">
+                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                            <div class="portfolio_img">
+                                <img class="img-responsive img-rounded" src="img/game.png" alt="Game">
+                                <div class="plus">
+                                    <i class="fas fa-plus fa-4x"></i>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4">
-                            <img class="img-responsive img-rounded portfolio_img" src="img/submarine.png" alt="Submarine">
+                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                            <div class="portfolio_img">
+                                <img class="img-responsive img-rounded" src="img/submarine.png" alt="Submarine">
+                                <div class="plus">
+                                    <i class="fas fa-plus fa-4x"></i>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4">
-                            <img class="img-responsive img-rounded portfolio_img" src="img/safe.png" alt="Safe">
+                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                            <div class="portfolio_img">
+                                <img class="img-responsive img-rounded" src="img/safe.png" alt="Safe">
+                                <div class="plus">
+                                    <i class="fas fa-plus fa-4x"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -92,29 +122,32 @@
             <section id="about" class="white_txt text-center">
                 <h2 class="bold_txt text-uppercase">About</h2>
                 <span class="icon_wrapper white_wrapper"><i class="fas fa-star fa-2x white_txt"></i></span>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-md-5">
-                            <p class="text-left">
-                                Freelancer is a free Bottstrap theme created by Start Bootstrap. The
-                                download includes the
-                                complete source files including <span class="text-uppercase">html</span>,
-                                <span class="text-uppercase">css</span> and JavaScript as well as optional
-                                <span class="text-uppercase">less</span> stylesheets for easy customization.
-                            </p>
+                <div class="wrapper_60">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <p class="text-left">
+                                    Freelancer is a free Bootstrap theme created by Start Bootstrap. The
+                                    download includes the
+                                    complete source files including <span class="text-uppercase">html</span>,
+                                    <span class="text-uppercase">css</span> and JavaScript as well as optional
+                                    <span class="text-uppercase">less</span> stylesheets for easy customization.
+                                </p>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <p class="text-left">
+                                    Whether you're a student looking to showcase your work,
+                                    a professional looking to attract
+                                    clients, or a graphic artist looking to share your projects, this template is the
+                                    perfect
+                                    starting point!
+                                </p>
+                            </div>
                         </div>
-                        <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-pull-1 col-md-5 col-md-pull-1">
-                            <p class="text-left">
-                                Whether you're a student looking to showcase your work,
-                                a professional looking to attract
-                                clients, or a graphic artist looking to share your projects, this template is the perfect
-                                starting point!
-                            </p>
-                        </div>
+                        <a href="#" class="btn btn_light">
+                            <i class="fas fa-download"></i>Download
+                        </a>
                     </div>
-                    <a href="#" class="btn btn_light">
-                        <i class="fas fa-download"></i>Download
-                    </a>
                 </div>
             </section>
             <!-- /about -->
@@ -123,9 +156,9 @@
             <section id="contact" class="text-center">
                 <h2 class="bold_txt text-uppercase">contact me</h2>
                 <span class="icon_wrapper black_wrapper"><i class="fas fa-star fa-2x"></i></span>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-10 col-xs-offset-1">
+                <div class="wrapper_60">
+                    <div class="container-fluid">
+                        <div>
                             <form action="index.html" method="get" class="text-left">
                                 <div class="form-group">
                                     <label class="label_txt" for="name">Name</label>
@@ -189,6 +222,13 @@
             </div>
         </footer>
         <!-- /footer -->
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
     </body>
 
 </html>
