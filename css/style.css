@@ -21,6 +21,8 @@ p {
   font-size: 1.5em;
 }
 .label_txt {
+  margin-top: 5px;
+  margin-bottom: 0;
   font-size: 1.3em;
   font-weight: normal;
 }
@@ -194,6 +196,12 @@ p {
 /* contact section */
 #contact {
   padding: 30px 0 40px 0;
+}
+.no_margin .form-group {
+  margin: 0;
+}
+[for*="message"] {
+  margin-top: 20px;
 }
 .no_brd {
   width: 100%;
