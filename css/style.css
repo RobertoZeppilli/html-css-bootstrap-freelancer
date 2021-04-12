@@ -119,6 +119,17 @@ p {
   margin-top: 23px;
   margin-bottom: 23px;
 }
+#navbar button:hover {
+  border-color: #1ABC9C;
+  background-color: transparent;
+}
+#navbar button:hover .icon-bar {
+  background-color: #1ABC9C;
+}
+#navbar button:focus {
+  background-color: #2c3e50;
+}
+
 
 /* jumbotron */
 #jumbotron {
@@ -238,7 +249,7 @@ p {
     font-size: 1.2em; 
   }
   #about p {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
   #jumbotron p {
     font-size: 1.1em;
@@ -248,7 +259,7 @@ p {
   }
   .address,
   .feature {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 
   #portfolio {
@@ -274,15 +285,15 @@ p {
 }
 
 /* sm */
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) {
 
   h3 {
     font-size: 1.5em;
   }
   .address,
   .feature {
-    font-size: 1.1em;
-  }
+    font-size: 1.2em;
+  } 
 
   #portfolio {
     padding: 30px 0;
